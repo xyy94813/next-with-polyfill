@@ -1,3 +1,13 @@
+# ide configure
+.vscode
+
+# out dir
+dist
+lib
+es
+mjs
+cjs
+
 # Logs
 logs
 *.log

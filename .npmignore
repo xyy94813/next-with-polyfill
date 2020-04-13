@@ -1,0 +1,11 @@
+**
+# output dir
+!es/**
+!lib/**
+!dist/**
+
+# package info
+!LICENSE
+!READNE.md
+!package.json
+!package-lock.json
