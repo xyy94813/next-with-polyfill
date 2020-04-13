@@ -26,6 +26,9 @@
   },
   "homepage": "https://github.com/xyy94813/next-with-polyfill#readme",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "babel-jest": "^25.3.0",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
@@ -47,5 +50,6 @@
     "*.{js,json}": [
       "./node_modules/.bin/prettier-eslint --config .prettierrc --eslint-config-path .eslintrc.js --write"
     ]
-  }
+  },
+  "dependencies": {}
 }
