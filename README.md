@@ -2,7 +2,7 @@
 
 Import polyfills in your Next.js project
 
-[![CircleCI branch](https://img.shields.io/circleci/project/github/xyy94813/next-with-polyfill/master.svg?style=flat-square)](https://circleci.com/gh/xyy94813/next-with-polyfill)
+[![Github Build Status](https://github.com/xyy94813/next-with-polyfill/workflows/Node%20CI/badge.svg?branch=master)](https://github.com/xyy94813/next-with-polyfill/actions?query=workflow%3A%22Node+CI%22)
 [![Codecov](https://img.shields.io/codecov/c/github/xyy94813/next-with-polyfill/master.svg?style=flat-square)](https://codecov.io/gh/xyy94813/next-with-polyfill/branch/master)
 [![Dependencies](https://img.shields.io/david/xyy94813/next-with-polyfill.svg)](https://david-dm.org/xyy94813/next-with-polyfill)
 [![DevDependencies](https://img.shields.io/david/dev/xyy94813/next-with-polyfill.svg)](https://david-dm.org/xyy94813/next-with-polyfill?type=dev)
