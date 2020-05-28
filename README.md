@@ -28,6 +28,8 @@ yarn add next-with-polyfill
 
 ### Config
 
+#### Normal Config
+
 in `next.config.js`
 
 ```js
@@ -39,6 +41,25 @@ module.exports = withPlugins([
     './node_modules/core-js/stable',
     './node_modules/regenerator-runtime/runtime',
   ]),
+]);
+```
+
+#### Change the Polyfill ChunkName
+
+```js
+const withPlugins = require('next-compose-plugins');
+const withPolyfill = require('next-with-polyfill');
+
+const polyfillChunkName = 'static/runtime/polyfills.js';
+
+module.exports = withPlugins([
+  withPolyfill(
+    [
+      './node_modules/core-js/stable',
+      './node_modules/regenerator-runtime/runtime',
+    ],
+    polyfillChunkName,
+  ),
 ]);
 ```
 
