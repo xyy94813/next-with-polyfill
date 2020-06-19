@@ -47,26 +47,26 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
 
-  publish-gpr:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-          registry-url: https://npm.pkg.github.com/
-          # scope: '@your-github-username'
-      - uses: actions/download-artifact@v2
-        with:
-          name: output-lib
-          path: lib
-      - uses: actions/download-artifact@v2
-        with:
-          name: output-es
-          path: es
-      - run: npm ci
-      - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > .npmrc
-      - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+  # publish-gpr:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - uses: actions/setup-node@v1
+  #       with:
+  #         node-version: 12
+  #         registry-url: https://npm.pkg.github.com/
+  #         # scope: '@your-github-username'
+  #     - uses: actions/download-artifact@v2
+  #       with:
+  #         name: output-lib
+  #         path: lib
+  #     - uses: actions/download-artifact@v2
+  #       with:
+  #         name: output-es
+  #         path: es
+  #     - run: npm ci
+  #     - run: echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" > .npmrc
+  #     - run: npm publish
+  #       env:
+  #         NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
