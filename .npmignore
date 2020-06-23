@@ -3,6 +3,7 @@
 !es/**
 !lib/**
 !dist/**
+!index.js
 
 # package info
 !LICENSE
