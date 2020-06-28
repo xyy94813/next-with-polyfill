@@ -21,7 +21,7 @@
     "plugin"
   ],
   "author": "RoXoM",
-  "license": "Apache-2.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/xyy94813/next-with-polyfill/issues"
   },
