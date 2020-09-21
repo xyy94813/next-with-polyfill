@@ -49,8 +49,9 @@ module.exports = withPlugins([
 ```js
 const withPlugins = require('next-compose-plugins');
 const withPolyfill = require('next-with-polyfill');
-
-const polyfillChunkName = 'static/runtime/polyfills.js';
+const {
+  CLIENT_STATIC_FILES_RUNTIME_POLYFILLS,
+} = require('next/dist/next-server/lib/constants.js');
 
 module.exports = withPlugins([
   withPolyfill(
@@ -58,7 +59,7 @@ module.exports = withPlugins([
       './node_modules/core-js/stable',
       './node_modules/regenerator-runtime/runtime',
     ],
-    polyfillChunkName,
+    CLIENT_STATIC_FILES_RUNTIME_POLYFILLS, 
   ),
 ]);
 ```
