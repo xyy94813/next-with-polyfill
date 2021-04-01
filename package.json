@@ -1,6 +1,6 @@
 {
   "name": "next-with-polyfill",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Import polyfills in your Next.js project",
   "main": "index.js",
   "module": "es/next-with-polyfill.development.js",
@@ -52,6 +52,5 @@
     "*.{js,json}": [
       "./node_modules/.bin/prettier-eslint --config .prettierrc --eslint-config-path .eslintrc.js --write"
     ]
-  },
-  "dependencies": {}
+  }
 }
